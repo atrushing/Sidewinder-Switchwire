@@ -2,7 +2,7 @@
 
     Needs some work, mainly on the A/B motor tensioning system
 
-![Switchwinder](https://github.com/atrushing/Vorpal_180/blob/main/Pictures/Vorpal_180.jpg?raw=true)
+![Switchwinder](https://raw.githubusercontent.com/atrushing/Sidewinder-Switchwire/main/Images/Switchwinder_01.jpg)
 
 
 ## Features:
