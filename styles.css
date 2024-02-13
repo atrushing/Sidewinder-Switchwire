@@ -17,6 +17,8 @@ div {
 
 .center {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #input {
@@ -24,6 +26,16 @@ div {
     max-height: 900px;
     background-color: #ffffff;
     color: #ffffff;
+    margin: 10px auto 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#output {
+    max-width: 832px;
+    max-height: 900px;
+    background-color: #ffffff;
+    color: #0a0a23;
     margin: 10px auto 0px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -67,35 +79,43 @@ button {
 }
 
 button:hover {
-    background-color: #fecc4c;
     background-image: none;
+    background-color: #fecc4c;
+}
+
+button.selected {
+    background-image: none;
+    background-color: #0a0a10;
+    color: #ffffff;
 }
 
 button.printers {
     width: 108px; }
-#printer6 { width: 142px; }
+    #printer6 { width: 142px; }
 
-#extruder1 { width: 81px; } /* Orbiter 1.5 */
-#extruder2 { width: 81px; } /* Orbiter 2.0 */
-#extruder3 { width: 81px; } /* Galileo SA */
-#extruder4 { width: 72px; } /* LGX-Lite */
-#extruder5 { width: 97px; } /* Hummingbird */
-#extruder6 { width: 91px; } /* Vz Hex CNC */
-#extruder7 { width: 90px; } /* Sherpa Mini */
-#extruder8 { width: 91px; } /* ProtoXtruder */
-#extruder9 { width: 98px; } /* Sherpa Micro */
+    #extruder1 { width: 81px; } /* Orbiter 1.5 */
+    #extruder2 { width: 81px; } /* Orbiter 2.0 */
+    #extruder3 { width: 81px; } /* Galileo SA */
+    #extruder4 { width: 72px; } /* LGX-Lite */
+    #extruder5 { width: 97px; } /* Hummingbird */
+    #extruder6 { width: 91px; } /* Vz Hex CNC */
+    #extruder7 { width: 90px; } /* Sherpa Mini */
+    #extruder8 { width: 91px; } /* ProtoXtruder */
+    #extruder9 { width: 98px; } /* Sherpa Micro */
 
 button.hotend1 {
     width: 127px; }
-#hotend2 { width: 143px; } /* Creality Spider Pro */
-#hotend5 { width: 142px; } /* Nitram VolcoMosq */
+
+    #hotend2 { width: 143px; } /* Creality Spider Pro */
+    #hotend5 { width: 142px; } /* Nitram VolcoMosq */
 
 button.hotend2 {
     width: 110px; }
-#hotend7 { width: 82px; } /* Rapido */
-#hotend11 { width: 124px; } /* Dragonfly BMO */
-#hotend12 { width: 127px; } /* Dragonfly BMS-6 */
-#hotend13 { width: 127px; } /* Dragonfly BMS-7 */
+
+    #hotend7 { width: 82px; } /* Rapido */
+    #hotend11 { width: 124px; } /* Dragonfly BMO */
+    #hotend12 { width: 127px; } /* Dragonfly BMS-6 */
+    #hotend13 { width: 127px; } /* Dragonfly BMS-7 */
 
 button.hotend3 {
     width: 201px; }
@@ -104,42 +124,36 @@ button.hotend3 {
     display: none;
 }
 
-.selected {
-    background-image: none;
-    background-color: #0a0a10;
-    color: #ffffff;
-}
+    #probe0 { width: 269px; } /* None */
+    #probe1 { width: 269px; } /* ZeroClick */
+    #probe2 { width: 270px; } /* Differential IR */
 
-#probe0 { width: 269px; } /* None */
-#probe1 { width: 269px; } /* ZeroClick */
-#probe2 { width: 270px; } /* Differential IR */
+    #probe3 { width: 65px; } /* None */
+    #probe4 { width: 73px; } /* Omron */
+    #probe5 { width: 67px; } /* Klicky */
+    #probe6 { width: 97px; } /* BL-Touch */
+    #probe7 { width: 107px; } /* MicroProbe */
+    #probe8 { width: 67px; } /* Euclid */
+    #probe9 { width: 97px; } /* Beacon3D */
+    #probe10 { width: 73px; } /* PINDA */
+    #probe11 { width: 137px; } /* Differential IR */
 
-#probe3 { width: 65px; } /* None */
-#probe4 { width: 73px; } /* Omron */
-#probe5 { width: 67px; } /* Klicky */
-#probe6 { width: 97px; } /* BL-Touch */
-#probe7 { width: 107px; } /* MicroProbe */
-#probe8 { width: 67px; } /* Euclid */
-#probe9 { width: 97px; } /* Beacon3D */
-#probe10 { width: 73px; } /* PINDA */
-#probe11 { width: 137px; } /* Differential IR */
+    #probe12 { width: 54px; } /* None */
+    #probe13 { width: 60px; } /* Omron */
+    #probe14 { width: 55px; } /* Klicky */
+    #probe15 { width: 80px; } /* BL-Touch */
+    #probe16 { width: 95px; } /* MicroProbe */
+    #probe17 { width: 55px; } /* Euclid */
+    #probe18 { width: 85px; } /* Beacon3D */
+    #probe19 { width: 60px; } /* PINDA */
+    #probe20 { width: 111px; } /* Differential IR */
+    #probe21 { width: 123px; } /* Mini Stealth DAB */
 
-#probe12 { width: 54px; } /* None */
-#probe13 { width: 60px; } /* Omron */
-#probe14 { width: 55px; } /* Klicky */
-#probe15 { width: 80px; } /* BL-Touch */
-#probe16 { width: 95px; } /* MicroProbe */
-#probe17 { width: 55px; } /* Euclid */
-#probe18 { width: 85px; } /* Beacon3D */
-#probe19 { width: 60px; } /* PINDA */
-#probe20 { width: 111px; } /* Differential IR */
-#probe21 { width: 123px; } /* Mini Stealth DAB */
-
-#probe22 { width: 160px; } /* None */
-#probe23 { width: 160px; } /* Micron Compatible */
-#probe24 { width: 159px; } /* Beacon3D */
-#probe25 { width: 160px; } /* Boop beta4 Wired */
-#probe26 { width: 160px; } /* Boop beta4 PCB */
+    #probe22 { width: 160px; } /* None */
+    #probe23 { width: 160px; } /* Micron Compatible */
+    #probe24 { width: 159px; } /* Beacon3D */
+    #probe25 { width: 160px; } /* Boop beta4 Wired */
+    #probe26 { width: 160px; } /* Boop beta4 PCB */
 
 button.chain {
     width: 269px; }

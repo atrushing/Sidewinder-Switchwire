@@ -7,11 +7,11 @@
   </head>
 
   <body>
-    <div id="header" class="center">Select your printer and then work your way down the page.</div>
+    <div id="header" class="center"></div>
     <div id="input">
       <div class="boxed">
         <div id="printer">
-            <div class="heading"><b>Select Printer</b></div>
+          <div class="heading"><b>Select Printer</b></div>
           <button id="printer1" class="printers">Voron V0.1</button>
           <button id="printer2" class="printers">Voron V0.2</button>
           <button id="printer3" class="printers">Vorpal 180</button>
@@ -20,17 +20,17 @@
           <button id="printer6" class="printers">Voron Switchwire</button>
           <button id="printer7" class="printers">PforA Micron</button>
         </div>
-        <div id="linearRails1" class="hidden">
+        <div id="linearRails1">
           <div class="heading">Linear Rail</div>
           <button id="linear1" class="linear1">MGN-7</button>
           <button id="linear2" class="linear1">MGN-9</button>
         </div>
-        <div id="linearRails2" class="hidden">
+        <div id="linearRails2">
           <div class="heading">Linear Rail</div>
           <button id="linear3" class="linear1">MGN-9</button>
           <button id="linear4" class="linear1">MGN-12</button>
         </div>
-        <div id="xstop" class="hidden">
+        <div id="xstop">
           <div class="heading">X Endstop</div>
           <button id="xstop1" class="linear1">Yes</button>
           <button id="xstop0" class="linear1">No</button>
@@ -78,12 +78,12 @@
       </div>
       <div class="boxed">
         <div class="heading">Select Probe</div>
-        <div id="probes01" class="hidden">
+        <div id="probes01">
           <button id="probe0" class="probes1">None</button>
           <button id="probe1" class="probes1">ZeroClick</button>
           <button id="probe2" class="probes1">Differential IR</button>
         </div>
-        <div id="probes02" class="hidden">
+        <div id="probes02">
           <button id="probe3" class="probes2">None</button>
           <button id="probe4" class="probes2">Omron</button>
           <button id="probe5" class="probes2">Klicky</button>
@@ -106,7 +106,7 @@
           <button id="probe20" class="probes3">Differential IR</button>
           <button id="probe21" class="probes3">Mini Stealth DAB</button>
         </div>
-        <div id="probes04" class="hidden">
+        <div id="probes04">
           <button id="probe22" class="probes4">None</button>
           <button id="probe23" class="probes4">Micron Compatible</button>
           <button id="probe24" class="probes4">Beacon3D</button>
@@ -119,13 +119,13 @@
         <button id="umbilical1" class="linear1">Yes</button>
         <button id="umbilical0" class="linear1">No</button>
       </div></div>
-      <div id="cblChain" class="boxed hidden"><div>
-          <div class="heading">Cable Chain</div>
-          <button id="chain0" class="chain">None</button>
-          <button id="chain1" class="chain">Igus</button>
-          <button id="chain2" class="chain">Generic</button>
+      <div id="cblChain" class="boxed"><div>
+        <div class="heading">Cable Chain</div>
+        <button id="chain0" class="chain">None</button>
+        <button id="chain1" class="chain">Igus</button>
+        <button id="chain2" class="chain">Generic</button>
       </div></div>
-      <div id="strain" class="boxed hidden"><div>
+      <div id="strain" class="boxed"><div>
         <div class="heading">Wire Strain Relief</div>
         <button id="strain0" class="linear1">High</button>
         <button id="strain1" class="linear1">Low</button>
@@ -137,8 +137,39 @@
         <button id="display2" class="display">Knomi 2</button>
         <button id="display3" class="display">Mellow Fly-Halo</button>
       </div></div>
+      <div id="statusLed" class="boxed"><div>
+        <div class="heading">Status LED</div>
+        <button id="status1" class="linear1">NeoPixel</button>
+        <button id="status2" class="linear1">Rainbow Barf</button>
+      </div></div>
     </div>
     <div id="text" class="center">Selected Options: </div>
+    <div id="output">
+        <div id="micro" class="boxed hidden">
+            <div class="sub center">Visit the 'Mini Stealth - Sherpa Micro' page for extruder specific files</div> 
+            <div id="microCore" class="sub"></div>
+        </div>
+        <div id="mini" class="boxed hidden">
+            <div class="sub center">Visit the 'Mini Stealth - Sherpa Mini' page for extruder specific files</div> 
+            <div id="miniCore" class="sub"></div>
+        </div>
+        <div id="orb15" class="boxed hidden">
+            <div class="sub center">Visit the 'Mini Stealth - Orbiter 1.5' page for extruder specific files</div> 
+            <div id="orb15Core" class="sub"></div>
+        </div>
+        <div id="orb20" class="boxed hidden">
+            <div class="sub center">Visit the 'Mini Stealth - Orbiter 2.0' page for extruder specific files</div> 
+            <div id="orb20Core" class="sub"></div>
+        </div>
+        <div id="lgxLite" class="boxed hidden">
+            <div class="sub center">Visit the 'Mini Stealth - LGX Lite' page for extruder specific files</div> 
+            <div id="lgxLiteCore" class="sub"></div>
+        </div>
+        <div id="common" class="boxed hidden">
+          <div class="sub center" class="sub">Visit the 'Mini Stealth - Common Files' page for the following files</div> 
+          
+        </div>
+    </div>
     <script src="./script.js"></script>
 
 
